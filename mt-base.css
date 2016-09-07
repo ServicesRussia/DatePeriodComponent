@@ -1,0 +1,1296 @@
+/* Reset Settings to minimize browser differences
+----------------------------------------------------------*/
+body,div,ul,li,form,input,textarea,p,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-spacing:0;
+    border-collapse: collapse;
+}
+img { 
+	border:0;
+}
+ol,ul {
+	list-style:none;
+}
+
+a{
+	outline: none;
+}
+
+/* General styles
+----------------------------------------------------------*/
+html, body {    
+   height: 100%; 
+}
+
+body{
+	font: normal 62.5% arial;
+	color: #333;
+	padding-bottom: 100px;
+    min-width: 980px;
+}    
+
+#main-container{
+	margin: 10px 0 0 10px;
+	position: relative;
+	min-height: 100%;
+}
+
+#clearfooter {
+   height: 200px;
+   clear: both;
+}
+
+.unexpected-error{
+	position: relative;
+	top: 80px;
+	font: normal 12px arial;
+	color: #ccc;
+	margin-left: 10%;		
+}
+
+.topheader-sub {
+    position: relative;
+}
+
+/* Window Error
+----------------------------------------------------------*/
+
+#window-error{
+    padding: 20px;
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0, 0.7);
+    font: normal 14px arial;
+    box-shadow: 2px 2px 2px #000;
+    border: 2px solid #444;
+    position: fixed;
+    z-index: 2000;
+    right: 40%;
+    top: 0;
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 50px;
+    max-height: 200px;    
+    overflow: auto;
+    word-wrap: break-word;    
+}
+
+#close-error{
+    background: #777;
+    color: #fff;
+    position: absolute;
+    z-index: 100;
+    top: 5px;
+    right: 12px;
+    padding: 2px 5px;
+    box-shadow: 0 0 3px #000;
+    cursor: pointer;
+}
+
+
+
+/* Buttons
+----------------------------------------------------------*/
+/* general button attribubtes */
+.button.file-upload {
+	position: relative;
+	overflow: hidden;
+}
+
+.button.file-upload .file-upload-input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+}
+
+
+/* button styles */
+.button-large{
+	cursor: pointer;
+	display: inline-block;
+	height: 26px;
+	position: relative;
+	padding-right: 12px;
+}
+
+.button-large .label{
+    color: #000 !important;
+    padding: 0 10px 0 20px;
+    font: bold 12px arial;
+    text-decoration: none;
+    background-image: url(../images/button-large-sprite.png);
+    background-repeat: no-repeat;
+    height: 26px;
+    margin: 0 !important;
+    text-align: center;
+}
+
+
+.button-large .label span{
+	top: 5px;
+	position: relative;
+    white-space: nowrap;
+    color: #000 !important;    
+}
+
+
+.button-large .right-corner {
+    background-image: url(../images/button-large-sprite.png);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 26px;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.button1{
+  border-radius: 14px;
+  -webkit-box-shadow: 0 0 5px #B5CE52;
+  box-shadow: 0 0 5px #B5CE52;
+  text-decoration: none;
+}
+
+.button1 .label{
+	background-position: 0 0;
+    text-shadow: 1px 1px 0 #E6EEC5;
+}
+
+.button1 .right-corner{
+	background-position: right 0;
+}
+
+.button1-clicked .label,
+.button1:active .label {
+	background-position: 0 -34px !important;
+}
+.button1-clicked .right-corner,
+.button1:active .right-corner{
+	background-position: right -34px !important;
+}
+
+.button1-hover .label,
+.button1:hover .label{
+	background-position: 0 -233px !important;
+}
+
+.button1-hover .right-corner,
+.button1:hover .right-corner{
+	background-position: right -233px !important;
+}
+
+.button2 .label{
+	background-position: 0 -72px;
+    text-shadow: 1px 1px 0 #E5F2F5;
+}
+
+.button2 .right-corner{
+	background-position: right -72px;
+}
+
+.button2-clicked .label,
+.button2:active .label{
+	background-position: 0 -107px !important;
+}
+.button2-clicked .right-corner,
+.button2:active .right-corner{
+	background-position: right -107px !important;
+}
+
+.button2-hover .label,
+.button2:hover .label{
+	background-position: 0 -275px !important;
+}
+.button2-hover .right-corner,
+.button2:hover .right-corner{
+	background-position: right -275px !important;
+}
+
+.button1.processing,
+.button1:hover.processing,
+.button1-hover.processing {
+    cursor: default !important;
+}
+
+.button1.processing .label,
+.button1:hover.processing .label,
+.button1-hover.processing .label {
+    background-position: 0 -314px !important;
+    color: #333;
+}
+
+.button1.processing .right-corner,
+.button1:hover.processing .right-corner,
+.button1-hover.processing .right-corner {
+    background-position: right -314px !important;
+}
+
+
+
+
+/* Inline gray button with icon
+----------------------------------------------------------*/
+
+.button-inline{
+	cursor: pointer;
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	padding-right: 12px;
+}
+
+.button-inline .label{
+    color: #999;
+    padding: 0 6px 0 4px;
+    font: bold 12px arial;
+    text-decoration: none;
+    background: url(../images/sprite-rounded-corners.png) 0 -20px no-repeat;
+    height: 34px;
+    display: inline-block;
+}
+
+
+.button-active .edit {
+    color: #333;
+    background-position: 0 -965px !important;
+}
+
+.button-active span{
+	color: #333;
+}
+
+
+.button-inline .right-corner {
+    background: url(../images/sprite-rounded-corners.png) -178px -20px no-repeat;
+    width: 12px;
+    height: 34px;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+
+/* Standard blue button
+----------------------------------------------------------*/
+
+.button-stan{
+	cursor: pointer;
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	padding-right: 12px;
+    text-shadow: 1px 1px 1px #fff;
+    line-height: 11px;
+}
+
+.button-stan .label{
+    color: #32596C;
+    padding: 0 4px 0 12px;
+    font: bold 11px arial;
+    text-decoration: none;
+    background: url(../images/button-large-sprite.png) 0 -144px no-repeat;
+    height: 21px;
+    display: inline-block;
+}
+
+.button-stan .label span{
+	top: 4px;
+	position: relative;
+    white-space: nowrap;
+}
+
+.button-stan .right-corner {
+    background: url(../images/button-large-sprite.png) right -144px no-repeat;
+    width: 12px;
+    height: 21px;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+
+.button-stan-clicked .label{
+	background-position: 0 -179px !important;
+}
+.button-stan-clicked .right-corner{
+	background-position: right -179px !important;
+}
+
+/* Default tooltip
+----------------------------------------------------------*/
+.info-hover .dtip {
+	display: block;
+	top: 0;
+	left: 25px;
+	cursor: default;
+}
+
+.dtip, .dtip-hover{
+	background: #484B4F;
+	position: absolute;
+	z-index: 900;
+	left: 0;
+	top: 300px;
+	padding: 2px 5px 5px 5px;
+	color: #fff;
+	display: none;
+    box-shadow: 1px 1px 1px #666;	
+	border-radius: 4px;
+	width: 230px;
+    text-shadow: 1px 1px 1px black;      
+}
+
+.dtip-title{
+	font: bold 12px arial;
+	margin: 5px 5px 0 5px;
+    text-shadow: 1px 1px 1px black, 1px 1px 2px black;    
+}
+
+.dtip-arrow{
+	width: 6px;
+	height: 12px;
+	position: absolute;
+	left: -5px;
+	top: 3px;
+	background: url(../images/survey-icons.png) -44px -1066px no-repeat;
+}
+
+.dtip-arrow-reverse{
+	width: 6px;
+	height: 12px;
+	position: absolute;
+	right: -5px;
+	top: 3px;
+    display: none;
+	background: url(../images/survey-icons.png) -78px -1066px no-repeat;
+}
+
+.dtip-arrow-top{
+	width: 12px;
+	height: 6px;
+	position: absolute;
+	left: 110px;
+	top: -6px;
+    display: none;
+	background: url(../images/survey-icons.png) -83px -1070px no-repeat;
+}
+
+
+.dtip-reverse .dtip-arrow-reverse{
+    display: block !important;
+}
+
+
+.dtip-reverse .dtip-arrow{
+    display: none !important;
+}
+
+.dtip-body{
+	font: normal 11px arial;
+	margin: 5px 0 5px 5px;
+	line-height: 16px;
+}
+
+#refresh{
+	width: 150px;
+}
+
+
+/* Generic rounded corner classes
+----------------------------------------------------------*/
+.top, .bottom, .body{
+	position: relative;
+}
+
+.top .left, .bottom .left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url(../images/sprite-rounded-corners.png);
+	background-repeat: no-repeat;
+}
+
+.top .right, .bottom .right{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-image: url(../images/sprite-rounded-corners.png);
+	background-repeat: no-repeat;
+}
+
+/* Rounded corner dimensions (w2)
+----------------------------------------------------------*/
+
+.w2 .top, .w2 .bottom{
+	height: 6px;
+    font-size: 1px;
+}
+
+.w2 .left, .w2 .right{
+	width: 6px;
+	height: 6px;
+    font-size: 1px;
+}
+
+.w2 .middle{
+	height: 6px;
+	margin: 0 6px;
+}
+
+/* Survey card
+----------------------------------------------------------*/
+.survey-card{
+	display: inline-block;
+	height: 14px;
+	width: 15px;
+	position: relative;
+	left: 5px;
+	top: 3px;
+	background-image: url(../images/survey-icons.png);
+	background-repeat: none;
+	background-position: 0 -853px;
+	cursor: pointer;
+}
+
+.survey-card-note{
+	width: 31px !important;
+}
+
+.survey-card-note{
+	width: 15px;
+}
+
+.survey-IMPORT_PENDING {
+    color:gray;
+}
+.survey-card-active{ background-position: 0 -877px;	}
+
+/* Survey tooltip hover
+----------------------------------------------------------*/
+
+.survey-tip{
+	position: absolute;
+	display: none;
+	z-index: 300;
+}
+
+.survey-tip .body{
+	background: #F5F285;
+	color: #5F5F4B;
+	font: normal 11px arial;
+	padding: 0 5px 0 5px;
+	padding: 0 5px 0 5px;
+	border-right: 2px solid #ccc;
+}
+
+.survey-tip .body .overdue{
+	display: block;
+}
+
+.survey-tip .middle{
+	background: #F5F285;
+}
+
+.survey-tip .top .left{
+	background-position: 0 -1276px;
+}
+
+.survey-tip .top .right{
+	background-position: -76px -1276px;
+}
+
+.survey-tip .bottom .left{
+	background-position: 0 -1294px;
+}
+
+.survey-tip .bottom .middle{
+	height: 4px;
+	border-bottom: 2px solid #ccc;
+}
+
+.survey-tip .bottom .right{
+	background-position: -76px -1294px;
+}
+
+.survey-tip .overdue{
+	margin: 5px 0 0 0;
+}
+
+#edit-survey-properties{
+	display: none;
+}
+
+#survey-inline-note{
+	border-top: 1px solid #A8BF35;
+	font: normal 12px arial;
+	padding: 3px 0 3px 40px;
+	margin: 1px 0 0 0;
+	background: #99B412 url(../images/survey-icons.png) -75px -517px no-repeat;
+}
+
+
+
+/* Survey hover
+----------------------------------------------------------*/
+
+.survey-hover{
+	z-index: 300;
+	width: 500px;
+	position: absolute;
+	display: none;
+}
+
+.survey-hover .top .middle{
+	background: #99B412;
+}
+
+.survey-hover .body, .survey-hover .bottom .middle{
+	background: #E4ECBF;
+}
+
+.survey-hover .top .left{
+	background-position: 0 -664px;
+}
+
+.survey-hover .top .right{
+	background-position: -343px -664px;
+}
+
+.survey-hover .bottom .left{
+	background-position: 0 -92px;
+}
+
+.survey-hover .bottom .right{
+	background-position: -92px -92px;
+}
+
+.survey-hover .header{
+	background: #99B412;
+	min-height: 54px;
+	width: 100%;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+
+.close-detail-info{
+	height: 12px;
+	width: 12px;
+	position: absolute;
+	right: 13px;
+	top: 10px;
+	z-index: 5;
+	cursor: pointer;
+	background: url(../images/survey-icons.png) 0 -772px no-repeat;
+}
+
+#info-tip .close-detail-info{
+	right: 8px;
+	top: 7px;
+}
+
+#survey-head{
+	font: bold 16px arial;
+	margin: 0 10px 0 20px;
+	padding-top: 5px;
+}
+
+
+#survey-creator,
+#survey-sub{
+	font: normal 15px arial;
+	margin: 0 10px 0 20px;
+	padding-top: 3px;
+}
+
+
+.zoom-error span{
+	margin: 20px;
+	height: 40px;
+    left: 10px;
+    color: red;
+}
+
+#survey-bottom{
+	margin: 20px 0 0 0;
+	height: 40px;
+	border-top: 1px solid #fff;
+}
+
+#survey-bottom .button-stan{
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+
+span.Alite{
+	font-bold: bold;
+	background: yellow;
+}
+
+.pane{
+	margin-top: 17px;
+	vertical-align: top;
+	min-height: 120px;
+	font: normal 12px arial;
+	display: inline-block;
+}
+
+.pane div{
+	display: block;
+	margin: 0 0 6px 0;
+}
+
+#left-pane{
+	margin-left: 5px;
+	width: 240px;
+}
+
+#right-pane{
+	width: 200px;
+}
+
+#right-pane span{
+	display: inline-block;
+	vertical-align: top;
+	width: 30px;
+	height: 14px;
+	background-image: url(../images/survey-icons.png);
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+}
+
+#right-pane span.on{
+	background-position: 0 -664px;
+}
+
+#right-pane span.off{
+	background-position: 0 -698px;
+}
+
+#left-pane span{
+	padding-right: 5px;
+	font-weight: bold;
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+	vertical-align: top;
+}
+
+
+
+
+
+
+/* Color Picker (version 1")
+----------------------------------------------------------*/
+.cp-module {
+    display: none;
+    position: absolute;
+
+    font: normal 12px/1.5em Arial, Helvetica, sans-serif;;
+    margin-top: 10px;
+    z-index: 999;
+}
+
+.cp-module .right {
+    float: right;
+}
+
+.cp-module a {
+    cursor: pointer;
+}
+
+/* Color Picker wrapper styling (bubble") */
+.cp-module .top {
+    background: url("../images/callout-sprite.png") no-repeat 0 -130px;
+    padding-left: 10px;
+    zoom: 1;
+}
+
+.cp-module .top span {
+    background: url("../images/callout-sprite.png") no-repeat 100% -150px;
+    display: block;
+    font-size: 1px;
+    height: 10px;
+}
+
+.cp-module .middle .bottom {
+    background: url("../images/callout-sprite.png") no-repeat 0 -140px;
+    padding-left: 10px;
+    zoom: 1;
+}
+
+.cp-module .middle .bottom span {
+    background: url("../images/callout-sprite.png") no-repeat 100% -160px;
+    display: block;
+    font-size: 1px;
+    height: 10px;
+}
+
+.cp-module .bottom {
+    background: url("../images/callout-sprite.png") no-repeat 0 -170px;
+    padding-left: 10px;
+    zoom: 1;
+}
+
+.cp-module .bottom span {
+    background: url("../images/callout-sprite.png") no-repeat 100% -180px;
+    display: block;
+    font-size: 1px;
+    height: 10px;
+}
+
+.cp-module .middle, .cp-module .ext {
+    background: #f0f0f0;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+}
+
+.cp-module .connect {
+    background: url("../images/callout-sprite.png") no-repeat 50% -190px;
+    height: 10px;
+    width: 20px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 20px;
+}
+
+
+/* Location differences */
+.cp-palette-mode {
+    width: 288px;
+    margin-left: -133px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 0 0 20px #999999;
+    -webkit-box-shadow: 0 0 20px #999999;
+    box-shadow: 0 0 20px #999999;
+}
+
+.cp-palette-mode-nw {
+    margin-left: -15px;
+}
+
+.cp-palette-mode-ne {
+    margin-left: -252px;
+}
+
+.cp-palette-mode-nw .connect {
+}
+
+.cp-palette-mode-ne .connect {
+    right: 0px;
+}
+
+
+/* wrap */
+.cp-main, .cp-palette {
+    background: #fff;
+    margin: 0 2px;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+}
+
+.cp-main {
+    position: relative;
+    height:190px;
+    width: 325px;
+}
+
+.cp-palette {
+    padding: 0 10px;
+    width: 260px;
+}
+
+.cp-palette p {
+    margin: 0;
+}
+
+.cp-main input {
+    border: 1px solid #aed9dd;
+    font: 11px/11px Arial,Helvetica,sans-serif;
+    padding: 4px 3px 2px;
+
+    vertical-align: middle;
+}
+
+.cp-main label {
+    display: inline-block;
+    width: 13px;
+}
+
+/* Color picker standard styling */
+
+.cp-bs-w {
+    height: 180px;
+    width: 180px;
+    padding: 5px;
+    position: absolute;
+    overflow: hidden;
+    left: 5px;
+    top: 0;
+}
+
+.cp-bs {
+    background: red;
+    margin: -1px 0 0 -1px;
+    height: 180px;
+    width: 180px;
+    border: 1px solid #cdcdcd;
+}
+
+.cp-grade {
+    background: url("../images/colorpicker-sprite.png") no-repeat 0 0 transparent;
+    height: 306px;
+    width: 180px;
+    position: absolute;
+    left: 5px;
+    top: -45px;
+}
+
+.cp-pointer {
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: 0;
+    left: 255px;
+    overflow: hidden;
+}
+
+.cp-bmark {
+    height: 11px;
+    width: 11px;
+    background: url("../images/colorpicker-sprite.png") no-repeat;
+}
+
+.cp-hue-w {
+    height: 179px;
+    width: 12px;
+    padding: 3px 2px;
+    position: absolute;
+    left: 205px;
+    top: 2px;
+}
+
+.cp-hue {
+    background: url("../images/colorpicker-sprite.png") no-repeat -200px -50px;
+    height: 180px;
+    width: 12px;
+    margin: -1px 0 0 -1px;
+    border: 1px solid #cdcdcd;
+}
+
+.cp-slider {
+    height: 7px;
+    width: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.cp-hmark {
+    background: url("../images/colorpicker-sprite.png") no-repeat;
+    margin-left: -20px;
+    height: 7px;
+    width: 44px;
+}
+
+.cp-swatch {
+    height: 59px;
+    left: 235px;
+    position: absolute;
+    top: 5px;
+    width: 59px;
+    border: 1px solid #cdcdcd;
+}
+
+.cp-picked {
+    background: red;
+    height: 50%;
+}
+
+.cp-palette .cp-picked {
+    display: none;
+}
+
+.cp-current {
+    background: red;
+    height: 50%;
+}
+
+.cp-rgb {
+    left: 235px;
+    position: absolute;
+    top: 82px;
+}
+
+.cp-rgb p {
+    padding: 1px 0;
+}
+
+.cp-rgb input {
+    width: 25px;
+}
+
+.cp-hex {
+    position: absolute;
+    left: 235px;
+    top: 160px;
+}
+
+.cp-hex input {
+    width: 50px;
+}
+
+.cp-buttons {
+    height: 20px;
+    padding: 4px 8px 5px 3px;
+
+}
+
+/* buttons */
+.cp-buttons .button1,
+.cp-buttons .button2 {
+    padding-left: 10px;
+    /* float: right; */
+    margin: 0 0 0 7px;
+}
+
+.cp-buttons .button1 span,
+.cp-buttons .button2 span {
+    padding-right: 10px;
+}
+
+/* Color Chips */
+.clr-set {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.clr-set .selected {
+    border: 1px solid #376c81;
+}
+
+.clr-set .selected .clr-chip {
+    background-image: url("../../images/common/icons-sprite.png");
+    background-repeat: no-repeat;
+    background-position: -15px -1247px;
+}
+
+.clr-cell {
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    zoom: 1;
+    border:1px solid #EAEAEA;
+    background: url("../../images/common/icons-sprite.png") no-repeat 0 -1650px;
+    margin-bottom: 3px;
+}
+
+.clr-chip {
+    display: block;
+    width: 18px;
+    height: 18px;
+    font-size: 1px;
+    border: 1px solid #fff;
+}
+
+.cp-palette-mode .cancel-simple{
+    position: relative;
+    left: 15px;
+    top: 6px;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.cp-palette-mode .button2{
+    position: relative;
+    left: 173px;
+}
+
+/* Breadcrumbs
+----------------------------------------------------------*/
+.inline-breadcrumbs {
+    margin-top: 15px;
+    padding: 0 0 3px;
+}
+
+.inline-breadcrumbs li {
+    background: url("../../images/common/icons-sprite.png") no-repeat scroll -23px -896px transparent;
+    display: inline;
+    font-size: 12px;
+    padding: 0 6px 0 12px;
+}
+
+.inline-breadcrumbs a,
+.inline-breadcrumbs .b-link {
+    color: #3A8C9E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inline-breadcrumbs li.root {
+    background: none;
+    padding: 0 6px 0 0;
+}
+.inline-breadcrumbs li.current a, .inline-breadcrumbs li.current a:hover,
+.inline-breadcrumbs li.current .b-link {
+    color: #666666;
+    cursor: default;
+    text-decoration: none;
+}
+
+/* Dialog Box
+----------------------------------------------------------*/
+.dialog-view {
+	height: 800px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: transparent url(../images/bg-ov.png);*/
+	background: #fff;
+    opacity: 0.75;
+    z-index: 501;
+}
+
+.dialog {
+    background: #EDEDED;
+    border-radius: 9px;
+    box-shadow: 0 0 30px #999;
+    border: 1px solid #DDDDDD;
+    /*min-width: 400px;*/
+    margin: 20px auto;
+    padding: 5px 0;
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    z-index: 699;
+}
+
+.dialog .error-message {
+    color: red;
+    margin: 10px 15px 0;
+}
+
+.dialog-float {
+    position: absolute;
+}
+
+.dialog-top .knob {
+    width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 12px solid #ededed;
+    left: 20px;
+    top: 100%;
+    position: absolute;
+}
+
+.dialog .title {
+    color: #777;
+    font: bold 14px arial;
+    margin: 0 15px;
+    padding: 10px 0 0;
+}
+
+.dialog .body {
+    background: #fff;
+    margin: 0 5px;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+}
+
+.dialog p {
+    margin-bottom: 5px;
+}
+
+.dialog .content {
+    font: normal 12px arial;
+    color: #333;
+    margin: 0 15px;
+    padding: 20px 0;
+}
+
+.dialog .description {
+    font: normal 12px arial;
+    color: #333;
+    margin: 0 15px;
+    padding: 10px 0;
+}
+
+.dialog .action {
+    text-align: center;
+    padding: 10px 0;
+    font: normal 12px arial;
+}
+
+.dialog .bottom-buttons {
+    padding: 5px 5px 0;
+}
+
+.dialog .bottom-buttons .right {
+    float: right;
+}
+.dialog .action {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Overlay Standard
+----------------------------------------------------------*/
+.overlay-view{
+	height: 800px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: transparent url(../images/bg-ov.png);*/
+	background: #fff;
+    opacity: 0.75;
+    z-index: 500;
+}
+
+.overlay .body {
+    min-width: 200px;
+}
+
+.overlay {
+    background: #EDEDED;
+    border-radius: 9px;
+    box-shadow: 0 0 15px #999;
+    margin: auto;
+    z-index: 500;
+    position: absolute;
+    display:none;
+}
+
+.overlay .header {
+    height: 40px;
+    position: relative;
+}
+
+.overlay .header .title {
+    color: #5F5F4B;
+    font: 20px arial;
+    margin: 15px 0 0 17px;
+    white-space: nowrap;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.overlay .header .right {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    z-index:5;
+}
+
+.overlay .header .close {
+    background: url("../images/survey-icons.png") no-repeat scroll 0 -751px;
+    right: 17px;
+    cursor: pointer;
+    height: 19px;
+    position: absolute;
+    top: 2px;
+    width: 19px;
+    z-index: 5;
+}
+
+.overlay .body {
+    position: relative;
+    background: #fff;
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.overlay .container {
+    overflow-y: auto;
+}
+
+.overlay .content {
+    margin: 17px;
+}
+
+.overlay .footer {
+    height: 25px;
+    position: relative;
+    padding: 10px 0 15px;
+}
+
+.overlay .footer .left {
+    padding-left: 17px;
+    float: left;
+}
+
+.overlay .footer .right {
+    float: right;
+    padding-right: 17px;
+}
+
+/* Array Block
+----------------------------------------------------------*/
+.data-block {
+    padding: 2px 0 14px 0;
+    background: #ECF5F9;
+    border-right: 1px solid #D2E7EC;
+    border-bottom: 1px solid #D2E7EC;
+    position: relative;
+    margin: 0 0 20px 0;
+    box-shadow: -1px -1px 1px #ccc;
+}
+
+/* Toggle Switch Interface */
+.toggle-switch{
+    background: url(../images/on-off-control.png) -9px -11px no-repeat;
+    width: 83px;
+    height: 21px;
+    position: relative;
+    top: 5px;
+    left: 0;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+
+.toggle-switch:hover .toggle-hover{
+    display: block;
+    left: -70px;
+    top: 30px;
+}
+
+.toggle-hover .dtip-arrow-top{
+    display: block;
+    border: 1px solid transparent;
+}
+
+.toggle-switch.l1{
+    left: 17px;
+}
+
+.toggle-switch .rightb{
+    width: 48px;
+    height: 21px;
+    position: absolute;
+    left: 0;
+    background: url(../images/on-off-control.png) -27px -50px no-repeat;
+}
+
+.toggle-switch.on .rightb{
+    left: 36px !important;
+}

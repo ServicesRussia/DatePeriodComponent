@@ -1,0 +1,671 @@
+/* Mod Layer
+----------------------------------------------------------*/
+.mod-layer {
+    -moz-box-shadow: 0 15px 27px 0 #777777;
+    -webkit-box-shadow: 0 15px 27px 0 #777777;
+    box-shadow: 0 15px 27px 0 #777777;
+    z-index: 9999991;
+    display: none;
+}
+
+.mod-active {
+    position: relative;
+    z-index: 9999991;
+}
+
+/* Calendar (version 1)
+----------------------------------------------------------*/
+.cal-pop {
+    position: absolute;
+    z-index: 999999;
+}
+
+.cal-module {
+    background: #fff;
+    width: 180px;
+    border: 1px solid #ccc;
+}
+
+.cal-header {
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 12px;
+    background: #ededed;
+    border-bottom: 1px solid #dddddd;
+    color: #000;
+    height: 20px;
+}
+
+.cal-contain {
+    padding: 10px;
+}
+
+.cal-bottom {
+    height: 10px;
+    background: #ededed;
+    border-top: 1px solid #dddddd;
+}
+.cal-pop {
+    -moz-border-radius: 0 0 13px 13px;
+}
+
+.cal-pop .cal-bottom {
+    -moz-border-radius: 0 0 15px 15px;
+    border-top: 1px solid #dddddd;
+}
+
+.cal-prev,
+.cal-next {
+    background: url("../../images/icons-sprite.png") no-repeat scroll -15px -150px transparent;
+    font-size: 1px;
+    height: 15px;
+    width: 15px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    text-decoration: none;    
+}
+
+.cal-prev {
+    left: 10px;
+}
+
+.cal-next {
+    background-position: -15px -175px;
+    right: 10px;
+}
+
+.cal-curmonth {
+    padding-right: 5px;
+}
+
+.cal-dp tbody {
+    border: none;
+}
+
+.cal-dp td,
+.cal-dp th {
+    padding: 1px 1px 0 0;
+    color: #6194A2;
+    text-align: center;
+    font-size: 11px;
+}
+
+.cal-dp th {
+    font-weight: bold;
+}
+
+
+
+.cal-day {
+    height: 19px;
+    width: 20px;
+    cursor: pointer;
+    background: url("../../images/toolbar-sprite.png") no-repeat scroll 0 -91px transparent;
+    border: 1px solid #B2D6DA;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    line-height: 19px;    
+}
+
+.cal-day:hover {
+    background: #fff;
+    text-decoration: none;
+}
+
+.cal-other {
+    visibility: hidden;
+    background: none repeat scroll 0 0 #B2D6DA;
+    color: #D0E8EE;
+}
+
+.cal-week .cal-other {
+    visibility: visible;
+}
+
+.today .cal-day {
+    font-weight: bold;
+}
+
+.selected .cal-day {
+    background: #3A6779 !important;
+    border: 1px solid #98BEC3;
+    color: #FFFFFF;
+}
+
+/* Block Attributes
+--------------------------------------------------------*/
+/* Common */
+.b-top, .b-bottom {
+    padding: 0 0 0 5px;
+}
+
+.b-top span, .b-bottom span {
+    height: 5px;
+    display: block;
+    font-size: 1px;
+    padding: 0 5px 0 0;
+}
+
+.b-top span span, .b-bottom span span {
+    padding: 0;
+}
+
+.b-middle {
+    padding: 2px 15px;
+}
+
+* html .b-top, * html .b-middle, * html .b-bottom {
+    zoom:1;
+}
+
+.b-sub {
+    clear:both;
+    padding: 5px 0 10px;
+}
+
+/* Error State
+----------------------------------------------------------*/
+.error-state .b-top, .error-area .b-top {
+    background: url("../../images/block-sprite.png") no-repeat scroll 0 -400px transparent;
+}
+.error-state .b-bottom, .error-area .b-bottom {
+    background: url("../../images/block-sprite.png") no-repeat scroll 0 -415px transparent;
+}
+.error-state .b-top span, .error-area .b-top span {
+    background: url("../../images/block-sprite.png") no-repeat scroll 100% -420px transparent;
+}
+.error-state .b-bottom span, .error-area .b-bottom span {
+    background: url("../../images/block-sprite.png") no-repeat scroll 100% -435px transparent;
+}
+.error-state .b-top span span, .error-state .b-bottom span span, .error-state .b-middle, .error-area .b-top span span, .error-area .b-bottom span span, .error-area .b-middle {
+    background: #FCF9BE;
+    border: none;
+}
+.error-state .error-message {
+    display: block;
+}
+
+.error-state .b-note {
+    background: url("../../images/icons-sprite.png") no-repeat scroll 0 0 #FCF9BE;
+    padding: 4px 0 4px 40px;
+}
+
+.error-message {
+    background: url("../../images/icons-sprite.png") no-repeat scroll -15px -23px transparent;
+    color: #333333;
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 17px;
+    padding-left: 25px;
+}
+
+/* Date Filter (version 3)
+--------------------------------------------------------*/
+.date-filter-module {
+    border: 1px solid #A6CDDA;
+    height: 15px;
+    padding: 3px 3px 4px 10px;
+    width: 350px;
+    font-size: 12px;
+    cursor: pointer;
+    background: url("../../../common/images/dropdown-10.gif") no-repeat scroll right 3px #fff;
+}
+
+.date-filter-module:hover{
+    border-color: #83A9B7;
+}
+
+.df-module {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999998;
+    width: 105px;
+    font-size: 12px;
+    line-height: 16px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*height: 185px;*/
+}
+
+/* Module Container */
+.df-module .connect {
+    background: url("../../images/toolbar-sprite.png") no-repeat scroll 0 -580px transparent;
+    height: 7px;
+    left: 20px;
+    position: absolute;
+    top: -6px;
+    width: 22px;
+    z-index: 100;
+}
+
+.df-module .top {
+    background: url("../../images/toolbar-sprite.png") no-repeat 0 -240px;
+    padding: 0 0 0 7px;
+}
+
+.df-module .top span {
+    height: 12px;
+}
+
+.df-module .bottom span {
+    height: 6px;
+}
+
+.df-module .top span,
+.df-module .bottom span {
+    display: block;
+    font-size: 1px;
+}
+
+.df-module .top span {
+    background: url("../../images/toolbar-sprite.png") no-repeat 100% -180px;
+    padding: 0 7px 0 0;
+}
+
+.df-module .top span span {
+    background: url("../../images/toolbar-sprite.png") repeat 0 -210px;
+    overflow: hidden;
+}
+
+.df-module .middle {
+    background: #D0E8EE;
+    border-left: 1px solid #B2D6DA;
+    border-right: 1px solid #B2D6DA;
+    padding: 0 10px;
+}
+
+.df-module .bottom {
+    background: url("../../images/toolbar-sprite.png") no-repeat 0 -420px;
+    padding: 0 0 0 7px;
+}
+.df-module .bottom span {
+    background: url("../../images/toolbar-sprite.png") no-repeat scroll 100% -360px transparent;
+    padding: 0 7px 0 0;
+}
+
+.df-module .bottom span span {
+    background: url("../../images/toolbar-sprite.png") repeat-x scroll 0 -390px transparent;
+    display: block;
+}
+
+.df-module .text {
+    border: 1px solid #AED9DD;
+    padding: 4px;
+}
+
+.df-module input {
+    margin: 0 5px;
+}
+
+.df-module input:focus{
+    -webkit-box-shadow: 0 0px 4px #A6CDDA;
+    box-shadow: 0 0px 4px #A6CDDA;
+	border-color: #83A9B7;
+}
+
+
+/* Tab (Menu Item) */
+.df-contain li {
+    padding: 0px 0 4px;
+    display: block;
+    width: 80px;
+}
+
+
+.df-tab {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 3px 0 1px 10px;
+    /* margin: 0 0 5px; */
+    cursor: pointer;
+    height: 20px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#df-daterange .df-radio-sel .df-field label{
+    width: 28px;
+    display: inline-block;
+}
+
+.df-tab:hover {
+    display: block;
+    background: url("../../images/df-sprite.gif") repeat-x -9px -11px transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.df-tab:hover span {   
+    background: url("../../images/df-sprite.gif") repeat-x -129px -11px transparent;
+    text-decoration: none;
+    cursor: pointer;
+    width: 10px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.df-contain li.selected{
+    width: 90px;
+}
+
+.df-contain li.selected .df-tab:hover span{
+    display: none;
+    
+}
+
+.df-contain #df-menu-top{
+    width: 80px;
+}
+
+/*
+li.selected #df-a-top span{   
+    background: url("../images/df-sprite.gif") repeat-x -129px -55px transparent;
+    text-decoration: none;
+    cursor: pointer;
+    width: 10px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.selected .df-tab {
+    background: url("../images/df-sprite.gif") repeat-x -9px -55px transparent;
+}
+*/
+
+
+/* Buttons */
+#df-button-controls {
+    /*display: none;*/
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+}
+
+#df-button-controls .button2 {
+    width: 66px;
+}
+
+#df-button-controls .button1 {
+    width: 75px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#df-button-controls .button-large{
+    margin: 0 0 0 15px;
+}
+
+
+/* Panel */
+.df-panel {
+    padding: 7px 10px 0 10px;
+    position: absolute;
+    top: 5px;
+    left: 85px;
+    width: 350px;
+}
+
+.df-panel .top {
+    background: url("../../images/wrappers-sprite.png") no-repeat 0 -40px;
+
+}
+
+.df-panel .top span {
+    background: url("../../images/wrappers-sprite.png") no-repeat 100% -60px;
+    height: 6px;
+}
+
+.df-panel .top span span,
+.df-panel .bottom span span,
+.df-panel .middle {
+    background: #F7F7F7;
+    border: none;
+}
+
+.df-panel .middle {
+    padding: 5px 12px 25px 20px;
+    min-height: 150px;
+}
+
+.df-panel .bottom {
+    background: url("../../images/wrappers-sprite.png") no-repeat 0 -54px;
+}
+
+.df-panel .bottom span {
+    background: url("../../images/wrappers-sprite.png") no-repeat 100% -74px;
+}
+
+/* Each radio list */
+.df-radio-sel {
+    line-height: 23px;
+    color: #39667D;
+    margin: 0 0 15px 0;
+    cursor: pointer;
+}
+
+.df-radio-sel select{
+    margin: 0 2px 0 2px;
+}
+
+.df-contain .df-custom-fiscal {
+    display: none;
+}
+
+.df-customfiscal-active .df-contain .df-custom-fiscal {
+    display: block;
+}
+
+.df-customfiscal-active .df-panel .middle {
+    min-height: 180px;
+}
+
+
+
+/* Common Classes */
+.df-note {
+    font-size: .9em;
+    color: #999;
+}
+
+.df-title {
+    font-weight: bold;
+    color: #468199;
+}
+
+.df-hide {
+    display: none;
+}
+
+.df-selectweek td {
+    background: yellow;
+}
+
+/* Specific Classes */
+.df-active-nofilter {
+    width: 105px;
+}
+
+.df-active-daterange,
+.df-active-days,
+.df-active-weeks,
+.df-active-months,
+.df-active-periods,
+.df-active-quarters,
+.df-active-years {
+    width: 455px;
+}
+
+.df-active-nofilter .df-nofilter-sel,
+.df-active-daterange .df-daterange-sel,
+.df-active-days .df-days-sel,
+.df-active-weeks .df-weeks-sel,
+.df-active-months .df-months-sel,
+.df-active-periods .df-periods-sel,
+.df-active-quarters .df-quarters-sel,
+.df-active-years .df-years-sel {
+    background: url("../../images/df-sprite.gif") repeat-x -9px -55px transparent;
+    width: 90px;
+}
+
+.df-active-nofilter .df-nofilter-sel {
+    width: 75px;
+}
+
+.df-active-nofilter .df-nofilter-sel span{
+    background: url("../../images/df-sprite.gif") repeat-x -129px -55px transparent;
+    text-decoration: none;
+    cursor: pointer;
+    width: 10px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.df-active-nofilter .df-panel {
+    display: none;
+}
+
+.df-active-weeks .df-contain {
+    height: 388px;
+}
+
+.df-error.df-active-weeks .df-panel .middle {
+    height: 376px;
+}
+
+.df-error.df-active-weeks .df-contain {
+    height: 420px;
+}
+
+.df-error .df-panel .middle {
+    height: 175px;
+}
+
+#df-daterange .df-title {
+    display: inline-block;
+    width: 35px;
+}
+
+#df-daterange .text {
+    margin-right: 7px;
+    width: 172px;
+}
+
+#df-daterange .df-option label {
+    color: #666;
+}
+
+#df-daterange .df-field {
+    padding: 5px 5px 0 0;
+}
+
+#df-daterange .df-option {
+    padding: 0 0 10px 100px;
+    width: 100px;
+    
+}
+
+
+#df-days .text {
+    width: 30px;
+}
+
+#df-weeks .other-month {
+    visibility: visible;
+    background: none repeat scroll 0 0 #B2D6DA;
+    color: #D0E8EE;
+    border: 1px solid #D0E8EE;
+}
+
+#df-weeks .df-weekinline {
+    margin-left: 23px;
+    /*margin-bottom: 10px;*/
+    /*height: 207px;*/
+}
+
+.df-weekbox {
+    height: 230px;
+}
+
+#df-weekdisplay {
+    color: #999999;
+    font-style: italic;
+    margin: 0 0 0 22px;
+}
+
+.df-prev-today {
+    margin-left: 20px;
+}
+
+/* Date Picker */
+.dp-popup {
+    position: absolute;
+    z-index: 999999;
+    background: #fff;
+    width: 167px;
+    margin-top: 24px;
+    border: 1px solid #ccc;
+}
+
+.other-month {
+    visibility: hidden;
+}
+
+.dp-popup h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+    background: #ededed;
+    border-bottom: 1px solid #dddddd;
+    color: #000;
+}
+
+.dp-nav-prev-year,
+.dp-nav-next-year {
+    display: none;
+}
+
+.dp-nav-prev-month,
+.dp-nav-next-month {
+    background: url("../../images/icons-sprite.png") no-repeat scroll -15px -150px transparent;
+    font-size: 1px;
+    height: 15px;
+    width: 15px;
+    display: block;
+}
+
+.dp-nav-next-month {
+    background-position: -15px -175px;
+}
+
+.dp-nav-prev,
+.dp-nav-next {
+    position: absolute;
+    top: 2px;
+}
+
+.dp-nav-prev {
+    left: 10px;
+}
+
+.dp-nav-next {
+    right: 10px;
+}
+
+.dp-calendar {
+    padding: 5px 10px 10px;
+}

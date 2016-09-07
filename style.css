@@ -1,0 +1,108 @@
+@import url('./mt-base.css');
+@import url('./date-filter.css');
+@import url('./jquery-ui.css');
+
+#rbr-date * {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    -ms-box-sizing: initial;
+    box-sizing: initial;
+}
+.df-module {
+    position: relative;
+    left: 0;
+    top: 6px;
+}
+.date-filter-module {
+	background: url("https://ad.euro.confirmit.com/dashboard/common/images/dropdown-10.gif") no-repeat scroll right 3px #fff;
+}
+.df-module .connect {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/toolbar-sprite.png") no-repeat scroll 0 -580px transparent;
+}
+.df-module .top {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/toolbar-sprite.png") no-repeat 0 -240px;
+}
+.df-module .top span {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/toolbar-sprite.png") no-repeat 100% -180px;
+}
+.df-module .top span span {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/toolbar-sprite.png") repeat 0 -210px;
+}
+.df-module .bottom {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/toolbar-sprite.png") no-repeat 0 -420px;
+}
+.df-module .bottom span {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/toolbar-sprite.png") no-repeat scroll 100% -360px transparent;
+}
+.df-module .bottom span span {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/toolbar-sprite.png") repeat-x scroll 0 -390px transparent;
+}
+.df-tab:hover {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/df-sprite.gif") repeat-x -9px -11px transparent;
+}
+.df-tab:hover span {   
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/df-sprite.gif") repeat-x -129px -11px transparent;
+}
+.df-panel .top {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/wrappers-sprite.png") no-repeat 0 -40px;
+
+}
+.df-panel .top span {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/wrappers-sprite.png") no-repeat 100% -60px;
+}
+.df-panel .bottom {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/wrappers-sprite.png") no-repeat 0 -54px;
+}
+.df-panel .bottom span {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/wrappers-sprite.png") no-repeat 100% -74px;
+}
+.df-panel .top span span, .df-panel .bottom span span, .df-panel .middle {
+    background: #F7F7F7;
+}
+.df-active-nofilter .df-nofilter-sel,
+.df-active-daterange .df-daterange-sel,
+.df-active-days .df-days-sel,
+.df-active-weeks .df-weeks-sel,
+.df-active-months .df-months-sel,
+.df-active-periods .df-periods-sel,
+.df-active-quarters .df-quarters-sel,
+.df-active-years .df-years-sel {
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/df-sprite.gif") repeat-x -9px -55px transparent;
+}
+.df-active-nofilter .df-nofilter-sel span{
+    background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/df-sprite.gif") repeat-x -129px -55px transparent;
+}
+.button-large .label, .button-large .right-corner {
+    background-image: url("https://ad.euro.confirmit.com/dashboard/common/images/button-large-sprite.png");
+}
+.df-active-weeks .df-contain {
+    height: 350px;
+}
+.df-active-weeks .df-panel .middle {
+    min-height: 305px;
+}
+.df-weekbox {
+    height: 100%;
+}
+.ui-widget-header .ui-icon {
+    background-image: url("https://code.jquery.com/ui/1.12.0/themes/base/images/ui-icons_444444_256x240.png");
+}
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: url("https://code.jquery.com/ui/1.12.0/themes/base/images/ui-icons_444444_256x240.png");
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	background: url("https://ad.euro.confirmit.com/dashboard/dashboard/images/toolbar-sprite.png") no-repeat scroll 0 -91px transparent;
+    border: 1px solid #B2D6DA;
+    color: #333;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #3A6779;
+    border: 1px solid #98BEC3;
+	color: #fff;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: #3A6779;
+    border: 1px solid #98BEC3;
+	color: #fff;
+}
+}
